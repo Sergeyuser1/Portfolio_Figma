@@ -6,13 +6,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-nav">
           <a href="#!" class="logo">Kelvin</a>
-          <nav class="nav">
+          <nav id="nav" class="nav">
             <ul class="nav-list">
               <li class="nav-item">
                 <a href="#!" class="nav-link active">Home</a>
@@ -26,12 +33,19 @@
                 <a href="#!" class="nav-link">Contact</a>
               </li>
             </ul>
+            <button id="nav-button-burger" class="button-burger">
+              <img
+                id="nav-button-burger-img"
+                src="/img/navigation/mav_open.svg"
+                alt=""
+              />
+            </button>
           </nav>
         </div>
         <div class="header-row">
           <div class="header-content">
             <h1 class="header-content-heading">
-              Kelvin Kramer Designer & Developer
+              Kelvin Kramer <br /><span>Designer & Developer</span>
             </h1>
             <p class="header-content-text">
               I’m a portrait, fashion and lifestyle photographer living In New
@@ -47,7 +61,7 @@
     <section class="services">
       <div class="container">
         <div class="services-row">
-          <div class="services-card 1">
+          <div class="services-card 1" data-aos="fade-down">
             <img src="/img/servises/01.svg" alt="UI/UX Design" />
             <h3>UI/UX Design</h3>
             <p>
@@ -55,7 +69,7 @@
               built on latest development standards.
             </p>
           </div>
-          <div class="services-card 2">
+          <div class="services-card 2" data-aos="fade-down">
             <img src="/img/servises/02.svg" alt="Development" />
             <h3>Development</h3>
             <p>
@@ -63,7 +77,7 @@
               built on latest development standards.
             </p>
           </div>
-          <div class="services-card 3">
+          <div class="services-card 3" data-aos="fade-down">
             <img src="/img/servises/03.svg" alt="software testing" />
             <h3>software testing</h3>
             <p>
@@ -77,21 +91,21 @@
     <section class="portfolio">
       <div class="container">
         <div class="portfolio-title"><h3>Portfolio</h3></div>
-        <div class="project">
+        <div class="project" data-aos="flip-up">
           <img class="project-img" src="/img/portfolio/im1.jpg" alt="" />
           <h3 class="project-title">
             <a href="#!">Online fashion store - Homepage</a>
           </h3>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in">
           <img class="project-img" src="/img/portfolio/im2.jpg" alt="" />
           <h3 class="project-title">
             <a href="#!">Reebok Store - Concept</a>
           </h3>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <img class="project-img" src="/img/portfolio/im3.jpg" alt="" />
           <h3 class="project-title">
             <a href="#!">Braun Landing Page - Concept</a>
@@ -127,6 +141,12 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/js/main.js"></script>
   </body>
 </html>
